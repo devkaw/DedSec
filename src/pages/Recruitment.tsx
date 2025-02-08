@@ -97,6 +97,7 @@ const Recruitment: React.FC = () => {
                 name="codename"
                 value={formData.codename}
                 onChange={handleChange}
+                required
                 className="w-full bg-black/50 border border-neon-green/20 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-neon-green"
                 placeholder="Seu codinome"
               />
@@ -108,6 +109,7 @@ const Recruitment: React.FC = () => {
                 type="email"
                 name="emai"
                 value={formData.emai}
+                required
                 onChange={handleChange}
                 className="w-full bg-black/50 border border-neon-green/20 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-neon-green"
                 placeholder="Seu e-mail"
@@ -118,6 +120,7 @@ const Recruitment: React.FC = () => {
               <label className="block text-sm font-medium mb-2">Área de Especialização</label>
               <select
                 name="especialization"
+                required
                 value={formData.especialization}
                 onChange={handleChange}
                 className="w-full bg-black/50 border border-neon-green/20 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-neon-green"
@@ -135,6 +138,7 @@ const Recruitment: React.FC = () => {
               <label className="block text-sm font-medium mb-2">Experiência</label>
               <textarea
                 name="experience"
+                required
                 value={formData.experience}
                 onChange={handleChange}
                 rows={4}
@@ -147,6 +151,7 @@ const Recruitment: React.FC = () => {
               <label className="block text-sm font-medium mb-2">Motivação</label>
               <textarea
                 name="motivation"
+                required
                 value={formData.motivation}
                 onChange={handleChange}
                 rows={4}

@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
     { icon: Shield, text: 'About Us', path: '/about' },
     { icon: UserPlus, text: 'Recruitment', path: '/recruitment' },
     { icon: Layout, text: 'Dashboard', path: '/dashboard', protected: true },
-    { icon: BookOpen, text: 'Blog', path: '/blog' },
+    { icon: BookOpen, text: 'Blog', path: '/blog', protected: true },
     { icon: Mail, text: 'Contact', path: '/contact' },
     { icon: LogIn, text: 'Login', path: '/login'}
   ];
@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
   const handleNavigation = (event: React.MouseEvent, item: any) => {
     if (item.protected && !isLoggedIn) {
       event.preventDefault();
-      setErrorMessage("⚠️ Você precisa estar logado para acessar o Dashboard!");
+      setErrorMessage("⚠️ Você precisa estar logado para acessar essa sessão!");
       setTimeout(() => setErrorMessage(''), 3000); // Oculta a mensagem após 3 segundos
     }
   };

@@ -72,6 +72,19 @@ const Dashboard: React.FC = () => {
               ))}
             </div>
           </div>
+
+          <div className="bg-darker-bg/60 p-6 rounded-lg border border-neon-green/20">
+            <h2 className="text-xl font-bold mb-4">Missões Ativas</h2>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-4 p-3 rounded-lg hover:bg-white/5">
+                <div className="w-2 h-2 mt-2 rounded-full bg-neon-green"></div>
+                <div>
+                  <p className="text-sm text-gray-300">Agora</p>
+                  <p className="text-white">Nenhuma missão detectada em sistema corporativo</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </motion.div>
     </div>
