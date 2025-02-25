@@ -19,7 +19,7 @@ const Dashboard: React.FC = () => {
               <h3 className="text-lg font-semibold">Membros DedSec</h3>
               <Users className="w-5 h-5 text-neon-green" />
             </div>
-            <p className="text-2xl font-bold text-neon-green">2</p>
+            <p className="text-2xl font-bold text-neon-green">3</p>
           </div>
           
           <div className="bg-darker-bg/60 p-6 rounded-lg border border-neon-green/20">
@@ -27,7 +27,7 @@ const Dashboard: React.FC = () => {
               <h3 className="text-lg font-semibold">Missões Ativas</h3>
               <Activity className="w-5 h-5 text-neon-green" />
             </div>
-            <p className="text-2xl font-bold text-neon-green">0</p>
+            <p className="text-2xl font-bold text-neon-green">1</p>
           </div>
           
           <div className="bg-darker-bg/60 p-6 rounded-lg border border-neon-green/20">
@@ -80,7 +80,7 @@ const Dashboard: React.FC = () => {
                 <div className="w-2 h-2 mt-2 rounded-full bg-neon-green"></div>
                 <div>
                   <p className="text-sm text-gray-300">Agora</p>
-                  <p className="text-white">Nenhuma missão detectada em sistema corporativo</p>
+                  <p className="text-white">Comprar nossos acessórios para começar.</p>
                 </div>
               </div>
             </div>
