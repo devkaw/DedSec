@@ -17,7 +17,7 @@ const Login: React.FC = () => {
       const password = (e.target as any).password.value;
 
       // Check if email and password are correct
-      if ((email === "kaduoxz@gmail.com" && password === "kwjr15052025") || (email === "joserafaelps15.oficial@gmail.com" && password === "kwjr15052025") || (email === "gabypc.frozen@gmail.com" && password === "1234asdf) ) {
+      if ((email === "kaduoxz@gmail.com" && password === "kwjr15052025") || (email === "joserafaelps15.oficial@gmail.com" && password === "kwjr15052025") || (email === "gabypc.frozen@gmail.com" && password === "1234asdf") ) {
         localStorage.setItem("logged", "true");
         setIsAuthenticating(false);
         window.location.href = "/dashboard"; // Redirect to dashboard or home page
